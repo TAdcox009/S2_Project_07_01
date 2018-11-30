@@ -22,6 +22,7 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* displays the body as a flex box with flex wrap */
 body {
     Display: flex;
     Display: -webkit-flex;
@@ -29,10 +30,12 @@ body {
     flex-wrap: wrap;
 }
 
+/* sets the growth and shrink rate of the sheet section to 3 and 1 and sets its basis size to 301 pixels. */
 section#sheet {
     flex: 3 1 301px;
 }
 
+/* set the articles flex growth and shrink values to 1 and 3 and set its basis size to 180 pixels. */
 article {
     flex: 1 3 180px;
 }
@@ -42,6 +45,7 @@ article {
    ============================================
 */
 
+/* this is a media query for screen devices with a maximum width of 480 pixels(phones), sets the image with the class of panel size 1 to a width of 100%, displays the nav with a class of horizonta; as a flexbox and controls what order its going to be placed it.*/
 @media only screen and (max-width: 480px) {
     body>footer {
         order: 100;
@@ -61,7 +65,7 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
+/* this is a media query for screen devices with a minimum width of 481 pixels(tablets and desktops), sets the size of the images, adds a flexbox and no wrap to the ul insdide the nav with a class of horizontal, and a height of 40 pixels.*/
 @media only screen and (min-width: 481px) {
     img.size4 {
         width: 30%;
@@ -90,14 +94,3 @@ article {
         height: 40px;
     }
 }
-
-
-
-/* 
-19. Devan also wants a print style that displays each comic book sheet on its own page and with none of the navigation links. Go to the gp_print.css style sheet in your editor. Add style rules to
-a. hide the nav, footer, and article elements. 
-b. set the width of the section element with the ID sheet to 6 inches. Set the top/bottom margin
-of that element to 0 inches and the left/right margin to auto in order to center it within the
-printed page.
-c. set the width of size1 images to 5 inches, size2 images to 3 inches, size3 images to 2 inches, and size4 images to 1.5 inches.
-20. Save your changes to the file and then reload the contents of the comic book pages in your browser and preview the printed pages. Verify that the printed page displays only the website logo, the name of the comic book, and the comic book panels. */

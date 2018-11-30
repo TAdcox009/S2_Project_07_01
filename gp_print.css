@@ -17,11 +17,33 @@
 
 
 /* Hidden Objects */
-
-
-
-
-
-
+/* hides the nav, footer, and article for when you want to print it */
+nav,
+footer,
+article {
+    display: none;
+}
 
 /* Comic Book Sheet Styles */
+/* sets the section with the id of sheet to a width of 6 inches, a margin of 0 on top and bottom and auto on the left and right */
+section#sheet {
+    width: 6in;
+    margin: 0 auto 0 auto;
+}
+
+/* sets the width of the images */
+img.size1 {
+    width: 6in
+}
+
+img.size2 {
+    width: 3in
+}
+
+img.size3 {
+    width: 2in
+}
+
+img.size4 {
+    width: 1.5in
+}
